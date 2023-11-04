@@ -1,17 +1,16 @@
-import { useEffect, useState } from "react"
-import { Inter } from 'next/font/google'
+import moment from 'moment'
 import { useTranslation } from 'react-i18next'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const { t } = useTranslation()
 
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center justify-between p-24`}
     >
       eteasasd da sd
+      <p>{moment().fromNow()}</p>
       {t("test")}
     </main>
   )
