@@ -1,14 +1,8 @@
 const en = {
-    global:{
+  global: {},
+  pages: {},
+  components: {},
+  test: 'testEN',
+};
 
-    },
-    pages:{
-
-    },
-    components:{
-
-    },
-    test:"testEN"
-}
-
-export default en
+export default en;

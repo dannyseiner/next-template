@@ -1,14 +1,8 @@
 const cs = {
-    global:{
+  global: {},
+  pages: {},
+  components: {},
+  test: 'testCS',
+};
 
-    },
-    pages:{
-
-    },
-    components:{
-
-    },
-    test:"testCS"
-}
-
-export default cs
+export default cs;
