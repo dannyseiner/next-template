@@ -9,6 +9,7 @@ import 'moment/locale/en-gb';
 
 import i18n, { availableLanguages } from '@/i18n';
 import MainLayout from '@/modules/common/layouts/Main';
+import { Toaster } from 'sonner';
 
 moment.locale(availableLanguages[i18n.language]);
 
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <I18nextProvider i18n={i18n}>
       <QueryClientProvider client={queryClient}>
         <MainLayout>
+          <Toaster expand visibleToasts={5} richColors position={"bottom-left"} />
           <Component {...pageProps} />
         </MainLayout>
       </QueryClientProvider>
